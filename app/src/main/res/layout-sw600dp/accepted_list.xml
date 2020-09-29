@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:textSize="@dimen/textsize"
+                    android:id="@+id/contentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="this is title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="@dimen/textsize"
+
+                        android:id="@+id/counterContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/counterIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/my_list_help_accepted_accept" />
+
+                    <TextView
+                        android:textSize="@dimen/textsize"
+
+                        android:id="@+id/typeContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="car" />
+
+                    <ImageView
+                        android:id="@+id/typeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/my_list_help_accepted_info_help_type" />
+
+                    <TextView
+                        android:textSize="@dimen/textsize"
+
+                        android:id="@+id/genderContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="man" />
+
+                    <ImageView
+                        android:id="@+id/genderIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/my_list_help_accepted_info_attendance" />
+
+                    <TextView
+                        android:textSize="@dimen/textsize"
+
+                        android:id="@+id/timeContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="hour" />
+
+                    <ImageView
+                        android:id="@+id/timeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/my_list_help_accepted_time" />
+                </LinearLayout>
+                <Button
+                    android:textSize="@dimen/textsize"
+
+                    android:id="@+id/cancel_button"
+                    android:layout_width="240sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshape"
+                    android:layout_gravity="right"
+                    android:text="رفض القبول" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/contentIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/type_car" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
